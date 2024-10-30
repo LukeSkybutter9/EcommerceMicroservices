@@ -1,0 +1,26 @@
+#spring.application.name=apigateway
+
+server:
+  port: 8080
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: usuarioservice
+          uri: lb://UsuarioService
+          predicates:
+            - Path=/user/**
+        - id: productoservice
+          uri: lb://ProductoService
+          predicates:
+            - Path=/producto/**
+        - id: ordenservice
+          uri: lb://OrdenService
+          predicates:
+            - Path=/orden/**
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8787/eureka
