@@ -66,9 +66,67 @@ services:
     depends_on:
       - keycloak-mysql
 
+  products-service:
+    build:
+      context: ./ProductoService
+      dockerfile: Dockerfile
+    container_name: products-service
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql_db3:3306/products_db
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=admin12345
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8787/eureka/
+    depends_on:
+      mysql_productsdb:
+        condition: service_healthy
+      eureka-server:
+        condition: service_started
+    networks:
+      - ali-network
+    ports:
+      - "8083:8080"
+
+  orders-service:
+    build:
+      context: ./OrdenService
+      dockerfile: Dockerfile
+    container_name: orders-service
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql_db1:3307/orders_db
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=admin12345
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8781/eureka/
+    depends_on:
+      mysql_ordersdb:
+        condition: service_healthy
+      eureka-server:
+        condition: service_started
+    networks:
+      - app-network
+    ports:
+      - "8084:8080"
+
+  eureka-server:
+    build:
+      context: ./discoveryservice
+      dockerfile: Dockerfile
+    container_name: eureka-server
+    environment:
+      - EUREKA_CLIENT_REGISTER_WITH_EUREKA=false
+      - EUREKA_CLIENT_FETCH_REGISTRY=false
+      - EUREKA_SERVER_ENABLE_SELF_PRESERVATION=false
+    networks:
+      - ali-network
+    ports:
+      - "8787:8787"
+
+
 volumes:
   orders_db_data:
   products_db_data:
+  eureka-server:
+  orders-service:
+  products-service:
 
 networks:
   ali-network:
