@@ -8,10 +8,10 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: usuarioservice
+        - id: keycloakservice
           uri: lb://keycloakservice
           predicates:
-            - Path=/user/**
+            - Path=/realms/spring-keycloak-realm/protocol/openid-connect/token
         - id: productoservice
           uri: lb://ProductoService
           predicates:
