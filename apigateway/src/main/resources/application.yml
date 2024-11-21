@@ -9,7 +9,7 @@ spring:
     gateway:
       routes:
         - id: usuarioservice
-          uri: lb://UsuarioService
+          uri: lb://keycloakservice
           predicates:
             - Path=/user/**
         - id: productoservice
