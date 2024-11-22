@@ -1,6 +1,7 @@
 /volume-data
 /micro.zip
-/docker
+/docker/mysql/orders_db_data/mysql.sock
+/docker/mysql/products_db_data/mysql.sock
 Ali-Project-micro.zip
 docker.zip
 /keycloakservice/build/
