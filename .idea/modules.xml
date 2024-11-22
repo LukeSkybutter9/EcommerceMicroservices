@@ -3,6 +3,24 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/EcommerceMicroservices.iml" filepath="$PROJECT_DIR$/.idea/EcommerceMicroservices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/OrdenService.iml" filepath="$PROJECT_DIR$/.idea/modules/OrdenService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/OrdenService.main.iml" filepath="$PROJECT_DIR$/.idea/modules/OrdenService.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/OrdenService.test.iml" filepath="$PROJECT_DIR$/.idea/modules/OrdenService.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ProductoService.iml" filepath="$PROJECT_DIR$/.idea/modules/ProductoService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ProductoService.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ProductoService.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ProductoService.test.iml" filepath="$PROJECT_DIR$/.idea/modules/ProductoService.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/UsuarioService.iml" filepath="$PROJECT_DIR$/.idea/modules/UsuarioService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/UsuarioService.main.iml" filepath="$PROJECT_DIR$/.idea/modules/UsuarioService.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/UsuarioService.test.iml" filepath="$PROJECT_DIR$/.idea/modules/UsuarioService.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/apigateway.iml" filepath="$PROJECT_DIR$/.idea/modules/apigateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/apigateway.main.iml" filepath="$PROJECT_DIR$/.idea/modules/apigateway.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/apigateway.test.iml" filepath="$PROJECT_DIR$/.idea/modules/apigateway.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/discoveryservice.iml" filepath="$PROJECT_DIR$/.idea/modules/discoveryservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/discoveryservice.main.iml" filepath="$PROJECT_DIR$/.idea/modules/discoveryservice.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/discoveryservice.test.iml" filepath="$PROJECT_DIR$/.idea/modules/discoveryservice.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/keycloak.iml" filepath="$PROJECT_DIR$/.idea/modules/keycloak.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/keycloak.main.iml" filepath="$PROJECT_DIR$/.idea/modules/keycloak.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/keycloak.test.iml" filepath="$PROJECT_DIR$/.idea/modules/keycloak.test.iml" />
     </modules>
   </component>
 </project>

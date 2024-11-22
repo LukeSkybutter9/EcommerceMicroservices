@@ -1,15 +1,16 @@
 package com.A.OrdenService.entity;
 
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import lombok.Data;
+import jakarta.persistence.*;
+import lombok.*;
 
-@Entity(name = "orden")
-@Data
-
+@Entity
+@Table(name = "order")
+@AllArgsConstructor
+@NoArgsConstructor
+@Setter
+@Getter
+@Builder
 public class Orden {
 
     @Id

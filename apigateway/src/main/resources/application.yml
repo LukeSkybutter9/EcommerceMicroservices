@@ -20,7 +20,14 @@ spring:
           uri: lb://OrdenService
           predicates:
             - Path=/orden/**
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8181/realms/spring-keycloak-realm
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8787/eureka
+    register-with-eureka: false
+    fetch-registry: false
