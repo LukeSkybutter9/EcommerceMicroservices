@@ -77,7 +77,7 @@ services:
     networks:
       - ali-network
     ports:
-      - "8787:8761"
+      - "8787:8787"
 
   products-service:
     build:
