@@ -8,10 +8,6 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: keycloakservice
-          uri: lb://keycloakservice
-          predicates:
-            - Path=/realms/spring-keycloak-realm/protocol/openid-connect/token
         - id: productoservice
           uri: lb://ProductoService
           predicates:
@@ -24,10 +20,8 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:8181/realms/spring-keycloak-realm
+          issuer-uri: http://localhost:8181/realms/spring-keyclock-realm
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8787/eureka
-    register-with-eureka: false
-    fetch-registry: false

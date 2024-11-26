@@ -1,3 +1,4 @@
+
 services:
   mysql_ordersdb:
     image: mysql:latest
@@ -17,6 +18,29 @@ services:
       timeout: 5s
       retries: 5
 
+  ordenservice:
+    build:
+      context: ./OrdenService
+      dockerfile: Dockerfile
+    container_name: ordenservice-container
+    ports:
+      - "8083:8083"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql_ordersdb:3306/orders_db
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=admin12345
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+      - SPRING_JPA_SHOW_SQL=true
+      - SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT=org.hibernate.dialect.MySQL8Dialect
+      - SPRING_SERVER_ADDRESS=0.0.0.0
+      - SPRING_SERVER_PORT=8083
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://discoveryserver:8787/eureka/
+    depends_on:
+      mysql_ordersdb:
+        condition: service_healthy
+    networks:
+      - ali-network
+
   mysql_productsdb:
     image: mysql:latest
     container_name: mysql-productsdb-container
@@ -34,6 +58,57 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+
+  productservice:
+    build:
+      context: ./ProductoService
+      dockerfile: Dockerfile
+    container_name: productservice-container
+    ports:
+      - "8084:8084"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql_productsdb:3306/products_db
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=admin12345
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+      - SPRING_JPA_SHOW_SQL=true
+      - SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT=org.hibernate.dialect.MySQL8Dialect
+      - SPRING_SERVER_ADDRESS=0.0.0.0
+      - SPRING_SERVER_PORT=8084
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://discoveryserver:8787/eureka/
+    depends_on:
+      mysql_productsdb:
+        condition: service_healthy
+    networks:
+      - ali-network
+
+  discoveryserver:
+    build:
+      context: ./discoveryservice
+      dockerfile: Dockerfile
+    container_name: discoveryserver-container
+    ports:
+      - "8787:8787"
+    environment:
+      - EUREKA_SERVER_PORT=8787
+      - SPRING_PROFILES_ACTIVE=default
+    networks:
+      - ali-network
+
+  apigateway:
+    build:
+      context: ./apigateway
+      dockerfile: Dockerfile
+    container_name: apigateway
+    environment:
+      - SPRING_SERVER_PORT=8080
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://discoveryserver:8787/eureka/
+    depends_on:
+      - discoveryserver
+    networks:
+      - ali-network
+    ports:
+      - "8080:8080"
 
   keycloak-mysql:
     container_name: keycloak-mysql-container
@@ -65,81 +140,11 @@ services:
     depends_on:
       - keycloak-mysql
 
-  eureka-server:
-    build:
-      context: ./discoveryservice
-      dockerfile: Dockerfile
-    container_name: eureka-server
-    environment:
-      - EUREKA_CLIENT_REGISTER_WITH_EUREKA=false
-      - EUREKA_CLIENT_FETCH_REGISTRY=false
-      - EUREKA_SERVER_ENABLE_SELF_PRESERVATION=false
-    networks:
-      - ali-network
-    ports:
-      - "8787:8787"
 
-  products-service:
-    build:
-      context: ./ProductoService
-      dockerfile: Dockerfile
-    container_name: products-service
-    environment:
-      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql_productsdb:3306/products_db
-      - SPRING_DATASOURCE_USERNAME=root
-      - SPRING_DATASOURCE_PASSWORD=admin12345
-      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8787/eureka/
-    depends_on:
-      mysql_productsdb:
-        condition: service_healthy
-      eureka-server:
-        condition: service_started
-    networks:
-      - ali-network
-    ports:
-      - "8083:8080"
-
-  orders-service:
-    build:
-      context: ./OrdenService
-      dockerfile: Dockerfile
-    container_name: orders-service
-    environment:
-      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql_ordersdb:3306/orders_db
-      - SPRING_DATASOURCE_USERNAME=root
-      - SPRING_DATASOURCE_PASSWORD=admin12345
-      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8787/eureka/
-    depends_on:
-      mysql_ordersdb:
-        condition: service_healthy
-      eureka-server:
-        condition: service_started
-    networks:
-      - ali-network
-    ports:
-      - "8084:8080"
-
-  apigateway:
-    build:
-      context: ./apigateway
-      dockerfile: Dockerfile
-    container_name: apigateway
-    environment:
-      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8787/eureka/
-    depends_on:
-      eureka-server:
-        condition: service_started
-    networks:
-      - ali-network
-    ports:
-      - "8080:8080"
 
 volumes:
   orders_db_data:
   products_db_data:
-  eureka-server:
-  orders-service:
-  products-service:
 
 networks:
   ali-network:
