@@ -1,7 +1,5 @@
-FROM openjdk:17-jdk-slim
-
-WORKDIR /app
-
-COPY build/libs/OrdenService-0.0.1-SNAPSHOT.jar /app/java-app.jar
-
-ENTRYPOINT ["java", "-jar", "java-app.jar"]
+FROM eclipse-temurin:17.0.12_7-jdk
+ARG JAR_FILE=build/libs/*.jar
+COPY ${JAR_FILE} OrdenService-1.jar
+EXPOSE 8083
+ENTRYPOINT ["java","-jar","/OrdenService-1.jar"]
