@@ -1,7 +1,7 @@
 #spring.application.name=apigateway
 
 server:
-  port: 8080
+  port: 8383
 spring:
   application:
     name: api-gateway
@@ -12,16 +12,24 @@ spring:
           uri: lb://ProductoService
           predicates:
             - Path=/producto/**
+          filters:
+            - AddRequestHeader=Authorization, "#{T(org.springframework.security.core.context.SecurityContextHolder).getContext().getAuthentication().getCredentials()}"
         - id: ordenservice
           uri: lb://OrdenService
           predicates:
             - Path=/orden/**
+          filters:
+            - AddRequestHeader=Authorization, "#{T(org.springframework.security.core.context.SecurityContextHolder).getContext().getAuthentication().getCredentials()}"
+          messages:
+            encoding: UTF-8
   security:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:8181/realms/spring-keyclock-realm
+          issuer-uri: http://keycloak-container:8080/realms/spring-keycloak-realm
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8787/eureka
+      defaultZone: http://discoveryserver:8787/eureka
+      register-with-eureka: true
+      fetch-registry: true

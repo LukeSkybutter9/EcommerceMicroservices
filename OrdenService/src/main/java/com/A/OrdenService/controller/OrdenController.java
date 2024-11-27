@@ -18,27 +18,27 @@ public class OrdenController {
         this.ordenService = ordenService;
     }
 
-    @PostMapping
-    @PreAuthorize("hasRole('USER')")
+    @PostMapping("/crear")
+    @PreAuthorize("hasRole('ROLE_USER')")
     public ResponseEntity<Orden> registrarOrden(@RequestBody Orden orden) {
         return ResponseEntity.ok(ordenService.registrarOrden(orden));
     }
 
     @GetMapping("/{id}")
-    @PreAuthorize("hasRole('USER')")
+    @PreAuthorize("hasRole('ROLE_USER')")
     public ResponseEntity<Orden> buscarOrdenPorId(@PathVariable Long id) {
         return ResponseEntity.ok(ordenService.buscarOrdenPorId(id));
     }
 
     @PutMapping("/{id}")
-    @PreAuthorize("hasRole('USER')")
+    @PreAuthorize("hasRole('ROLE_USER')")
     public ResponseEntity<Orden> actualizarOrden(@PathVariable Long id, @RequestBody Orden orden) {
         return ResponseEntity.ok(ordenService.actualizarOrden(id, orden));
     }
 
 
     @PatchMapping("/{id}/status")
-    @PreAuthorize("hasRole('USER')")
+    @PreAuthorize("hasRole('ROLE_USER')")
     public ResponseEntity<Orden> modificarStatusOrden(@PathVariable Long id, @RequestBody Boolean Status) {
         Orden ordenmodificado = ordenService.modificarStatusOrden(id, Status);
         return ResponseEntity.ok(ordenmodificado);

@@ -7,9 +7,29 @@
     <list default="true" id="f8477149-49c6-4050-a8cf-2c19ffe1e09e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OrdenService/src/main/java/com/A/OrdenService/controller/OrdenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrdenService/src/main/java/com/A/OrdenService/controller/OrdenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrdenService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/OrdenService/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProductoService/src/main/java/com/A/ProductoService/controller/ProductoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductoService/src/main/java/com/A/ProductoService/controller/ProductoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductoService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ProductoService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/keycloak/realms/realm-export.json" beforeDir="false" afterPath="$PROJECT_DIR$/docker/keycloak/realms/realm-export.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/orders_db_data/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/orders_db_data/#ib_16384_0.dblwr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/orders_db_data/#innodb_redo/#ib_redo10" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/orders_db_data/#innodb_redo/#ib_redo10" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/orders_db_data/binlog.index" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/orders_db_data/binlog.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/orders_db_data/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/orders_db_data/ib_buffer_pool" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/orders_db_data/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/orders_db_data/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/orders_db_data/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/orders_db_data/mysql.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/orders_db_data/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/orders_db_data/undo_001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/orders_db_data/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/orders_db_data/undo_002" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/#ib_16384_0.dblwr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/#innodb_redo/#ib_redo10" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/#innodb_redo/#ib_redo10" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/binlog.index" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/binlog.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/ib_buffer_pool" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/mysql.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/undo_001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/undo_002" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloakservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/keycloakservice/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +69,9 @@
           <activation />
         </task>
         <task path="$PROJECT_DIR$/apigateway">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/keycloakservice">
           <activation />
         </task>
         <projects_view>
@@ -162,7 +185,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ProductoService [build]">
+  <component name="RunManager" selected="Gradle.OrdenService [build]">
     <configuration name="OrdenService [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -299,12 +322,12 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.keycloak: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="docker-compose.yml.productservice: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="keycloak" />
+              <option value="productservice" />
             </list>
           </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
@@ -314,11 +337,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ProductoService [build]" />
-        <item itemvalue="Gradle.ProductoService [clean]" />
         <item itemvalue="Gradle.OrdenService [build]" />
         <item itemvalue="Gradle.OrdenService [clean]" />
-        <item itemvalue="Docker.docker-compose.yml.keycloak: Compose Deployment" />
+        <item itemvalue="Gradle.ProductoService [build]" />
+        <item itemvalue="Gradle.ProductoService [clean]" />
+        <item itemvalue="Docker.docker-compose.yml.productservice: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -343,6 +366,7 @@
       <workItem from="1732653983838" duration="3699000" />
       <workItem from="1732657763476" duration="2283000" />
       <workItem from="1732660792356" duration="16630000" />
+      <workItem from="1732722403877" duration="15478000" />
     </task>
     <servers />
   </component>

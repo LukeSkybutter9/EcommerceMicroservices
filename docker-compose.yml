@@ -24,7 +24,7 @@ services:
       dockerfile: Dockerfile
     container_name: ordenservice-container
     ports:
-      - "8083:8083"
+      - "8083:8080"
     environment:
       - SPRING_DATASOURCE_URL=jdbc:mysql://mysql_ordersdb:3306/orders_db
       - SPRING_DATASOURCE_USERNAME=root
@@ -35,8 +35,7 @@ services:
       - SPRING_SERVER_ADDRESS=0.0.0.0
       - SPRING_SERVER_PORT=8083
       - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://discoveryserver:8787/eureka/
-      - SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_ISSUERURI=http://keycloak:8181/realms/spring-keyclock-realm
-
+      - KEYCLOAK_ISSUER_URI=http://keycloak-container:8080/realms/spring-keycloak-realm
     depends_on:
       mysql_ordersdb:
         condition: service_healthy
@@ -78,10 +77,8 @@ services:
       - SPRING_SERVER_ADDRESS=0.0.0.0
       - SPRING_SERVER_PORT=8084
       - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://discoveryserver:8787/eureka/
-      - spring.security.oauth2.resourceserver.jwt.issuer-uri=http://keycloak:8181/realms/spring-keyclock-realm
-      - spring.security.oauth2.resourceserver.jwt.jwk-set-uri=http://localhost:8181/realms/spring-keycloak-realm/protocol/openid-connect/certs
-
-
+      - KEYCLOAK_ISSUER_URI=http://keycloak-container:8080/realms/spring-keycloak-realm
+      - spring.security.oauth2.resourceserver.jwt.jwk-set-uri=http://keycloak-container:8080/realms/spring-keycloak-realm/protocol/openid-connect/certs
     depends_on:
       mysql_productsdb:
         condition: service_healthy
@@ -107,16 +104,14 @@ services:
       dockerfile: Dockerfile
     container_name: apigateway
     environment:
-      - SPRING_SERVER_PORT=8080
+      - SPRING_SERVER_PORT=8383
       - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://discoveryserver:8787/eureka/
-      - spring.security.oauth2.resourceserver.jwt.issuer-uri=http://keycloak:8181/realms/spring-keyclock-realm
-      - spring.security.oauth2.resourceserver.jwt.jwk-set-uri=http://localhost:8181/realms/spring-keycloak-realm/protocol/openid-connect/certs
     depends_on:
       - discoveryserver
     networks:
       - ali-network
     ports:
-      - "8080:8080"
+      - "8383:8383"
 
   keycloak-mysql:
     container_name: keycloak-mysql-container
@@ -128,6 +123,8 @@ services:
       MYSQL_DATABASE: keycloak
       MYSQL_USER: keycloak
       MYSQL_PASSWORD: password
+    networks:
+      - ali-network
 
   keycloak:
     container_name: keycloak-container
@@ -147,6 +144,8 @@ services:
       - ./docker/keycloak/realms/:/opt/keycloak/data/import/
     depends_on:
       - keycloak-mysql
+    networks:
+      - ali-network
 
 volumes:
   orders_db_data:
