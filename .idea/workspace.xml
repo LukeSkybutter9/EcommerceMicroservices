@@ -5,31 +5,76 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8477149-49c6-4050-a8cf-2c19ffe1e09e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/OrdenService/src/main/java/com/A/OrdenService/configs/FeignRequestInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrdenService/src/main/java/com/A/OrdenService/controller/ProductoServiceClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrdenService/src/main/java/com/A/OrdenService/entity/Producto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrdenService/src/main/resources/application-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductoService/src/main/resources/application-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apigateway/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/java/example/microservices/configserver/ConfigServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/test/java/example/microservices/configserver/ConfigServerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discoveryservice/src/main/resources/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrdenService/src/main/java/com/A/OrdenService/controller/OrdenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrdenService/src/main/java/com/A/OrdenService/controller/OrdenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrdenService/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/OrdenService/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrdenService/src/main/java/com/A/OrdenService/OrdenServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrdenService/src/main/java/com/A/OrdenService/OrdenServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrdenService/src/main/java/com/A/OrdenService/service/OrdenServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrdenService/src/main/java/com/A/OrdenService/service/OrdenServiceImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OrdenService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/OrdenService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductoService/src/main/java/com/A/ProductoService/controller/ProductoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductoService/src/main/java/com/A/ProductoService/controller/ProductoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductoService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ProductoService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductoService/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ProductoService/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductoService/src/main/java/com/A/ProductoService/ProductoServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductoService/src/main/java/com/A/ProductoService/ProductoServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apigateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/keycloak/realms/realm-export.json" beforeDir="false" afterPath="$PROJECT_DIR$/docker/keycloak/realms/realm-export.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/mysql/orders_db_data/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/orders_db_data/#ib_16384_0.dblwr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/mysql/orders_db_data/#innodb_redo/#ib_redo10" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/orders_db_data/#innodb_redo/#ib_redo10" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/orders_db_data/auto.cnf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/orders_db_data/auto.cnf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/mysql/orders_db_data/binlog.index" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/orders_db_data/binlog.index" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/mysql/orders_db_data/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/orders_db_data/ib_buffer_pool" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/mysql/orders_db_data/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/orders_db_data/ibdata1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/mysql/orders_db_data/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/orders_db_data/mysql.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/orders_db_data/orders_db/orden.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/orders_db_data/orders_db/orden.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/mysql/orders_db_data/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/orders_db_data/undo_001" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/mysql/orders_db_data/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/orders_db_data/undo_002" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/#ib_16384_0.dblwr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/#innodb_redo/#ib_redo10" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/#innodb_redo/#ib_redo10" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/#innodb_temp/temp_1.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/#innodb_temp/temp_1.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/#innodb_temp/temp_10.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/#innodb_temp/temp_10.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/#innodb_temp/temp_2.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/#innodb_temp/temp_2.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/#innodb_temp/temp_3.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/#innodb_temp/temp_3.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/#innodb_temp/temp_4.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/#innodb_temp/temp_4.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/#innodb_temp/temp_5.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/#innodb_temp/temp_5.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/#innodb_temp/temp_6.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/#innodb_temp/temp_6.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/#innodb_temp/temp_7.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/#innodb_temp/temp_7.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/#innodb_temp/temp_8.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/#innodb_temp/temp_8.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/#innodb_temp/temp_9.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/#innodb_temp/temp_9.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/auto.cnf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/auto.cnf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/binlog.index" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/binlog.index" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/ib_buffer_pool" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/ibtmp1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/mysql.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/products_db/producto.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/products_db/producto.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/undo_001" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/undo_002" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloakservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/keycloakservice/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloakservice/.gradle/8.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/keycloakservice/.gradle/8.8/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloakservice/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/keycloakservice/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloakservice/.gradle/8.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/keycloakservice/.gradle/8.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloakservice/.gradle/8.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/keycloakservice/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloakservice/.gradle/8.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/keycloakservice/.gradle/8.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloakservice/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/keycloakservice/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloakservice/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/keycloakservice/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloakservice/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/keycloakservice/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloakservice/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/keycloakservice/build/resources/main/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,16 +124,16 @@
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ProductoService" type="f1a62948:ProjectNode" />
+                <item name="OrdenService" type="f1a62948:ProjectNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ProductoService" type="f1a62948:ProjectNode" />
+                <item name="OrdenService" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ProductoService" type="f1a62948:ProjectNode" />
+                <item name="OrdenService" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
               </path>
@@ -98,6 +143,13 @@
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -141,6 +193,8 @@
     &quot;Gradle.discoveryservice [build].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.discoveryservice [clean].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.discoveryservice [jar].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.keycloakservice [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.keycloakservice [clean].executor&quot;: &quot;Run&quot;,
     &quot;JUnit.Whole project.executor&quot;: &quot;Run&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
@@ -153,7 +207,7 @@
     &quot;Spring Boot.ProductoServiceApplication.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Luke Skyhack/Documents/Ecommerce/ProductoService/src/main/java/com/A/ProductoService&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Estudiantes/Documents/E-comerce/config-server&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -168,11 +222,17 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Luke Skyhack\Documents\Ecommerce\ProductoService\src\main\java\com\A\ProductoService" />
-      <recent name="C:\Users\Luke Skyhack\Documents\Ecommerce\OrdenService\src\main\java\com\A\OrdenService" />
-      <recent name="C:\Users\Estudiante\Documents\micro\apigateway\src\main\java\com\ali\apigateway" />
-      <recent name="C:\Users\Estudiante\Downloads\micro-2.0\apigateway" />
-      <recent name="C:\Users\Luke Skyhack\Documents\Ecommerce\discoveryservice" />
+      <recent name="C:\Users\Estudiantes\Documents\E-comerce" />
+      <recent name="C:\Users\Estudiantes\Documents\E-comerce\discoveryservice\src\main\resources" />
+      <recent name="C:\Users\Estudiantes\Documents\E-comerce\apigateway\src\main\resources" />
+      <recent name="C:\Users\Estudiantes\Documents\E-comerce\ProductoService\src\main\resources" />
+      <recent name="C:\Users\Estudiantes\Documents\E-comerce\OrdenService\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Estudiantes\Documents\E-comerce\OrdenService\src\main\java\com\A\OrdenService\controller" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.A.OrdenService.entity" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -185,7 +245,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.OrdenService [build]">
+  <component name="RunManager" selected="Spring Boot.ConfigServerApplication">
     <configuration name="OrdenService [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -230,10 +290,10 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ProductoService [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="apigateway [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/ProductoService" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/apigateway" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -252,31 +312,22 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ProductoService [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/ProductoService" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="ApigatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="apigateway.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ali.apigateway.ApigatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="config-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="example.microservices.configserver.ConfigServerApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="example.microservices.configserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -322,12 +373,12 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.productservice: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="docker-compose.yml.ordenservice: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="productservice" />
+              <option value="ordenservice" />
             </list>
           </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
@@ -337,11 +388,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ConfigServerApplication" />
+        <item itemvalue="Docker.docker-compose.yml.ordenservice: Compose Deployment" />
         <item itemvalue="Gradle.OrdenService [build]" />
         <item itemvalue="Gradle.OrdenService [clean]" />
-        <item itemvalue="Gradle.ProductoService [build]" />
-        <item itemvalue="Gradle.ProductoService [clean]" />
-        <item itemvalue="Docker.docker-compose.yml.productservice: Compose Deployment" />
+        <item itemvalue="Gradle.apigateway [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -372,5 +423,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

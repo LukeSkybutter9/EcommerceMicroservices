@@ -1,4 +1,3 @@
-#spring.application.name=apigateway
 
 server:
   port: 8383
@@ -9,19 +8,14 @@ spring:
     gateway:
       routes:
         - id: productoservice
-          uri: lb://ProductoService
+          uri: lb://PRODUCTOSERVICE
           predicates:
             - Path=/producto/**
-          filters:
-            - AddRequestHeader=Authorization, "#{T(org.springframework.security.core.context.SecurityContextHolder).getContext().getAuthentication().getCredentials()}"
         - id: ordenservice
           uri: lb://OrdenService
           predicates:
             - Path=/orden/**
-          filters:
-            - AddRequestHeader=Authorization, "#{T(org.springframework.security.core.context.SecurityContextHolder).getContext().getAuthentication().getCredentials()}"
-          messages:
-            encoding: UTF-8
+
   security:
     oauth2:
       resourceserver:

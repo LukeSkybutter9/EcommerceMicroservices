@@ -24,7 +24,7 @@ services:
       dockerfile: Dockerfile
     container_name: ordenservice-container
     ports:
-      - "8083:8080"
+      - "8083:8083"
     environment:
       - SPRING_DATASOURCE_URL=jdbc:mysql://mysql_ordersdb:3306/orders_db
       - SPRING_DATASOURCE_USERNAME=root
@@ -36,6 +36,8 @@ services:
       - SPRING_SERVER_PORT=8083
       - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://discoveryserver:8787/eureka/
       - KEYCLOAK_ISSUER_URI=http://keycloak-container:8080/realms/spring-keycloak-realm
+      - spring.security.oauth2.resourceserver.jwt.jwk-set-uri=http://keycloak-container:8080/realms/spring-keycloak-realm/protocol/openid-connect/certs
+
     depends_on:
       mysql_ordersdb:
         condition: service_healthy

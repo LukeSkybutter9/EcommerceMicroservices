@@ -1,6 +1,9 @@
 package com.A.OrdenService.service;
 
+
+import com.A.OrdenService.controller.ProductoServiceClient;
 import com.A.OrdenService.entity.Orden;
+import com.A.OrdenService.entity.Producto;
 import com.A.OrdenService.repository.OrdenRepository;
 import org.springframework.stereotype.Service;
 
@@ -8,13 +11,20 @@ import org.springframework.stereotype.Service;
 public class OrdenServiceImp implements OrdenService{
 
     private final OrdenRepository ordenRepository;
+    private final ProductoServiceClient productoServiceClient;
 
-    public OrdenServiceImp(OrdenRepository ordenRepository) {
+    public OrdenServiceImp(OrdenRepository ordenRepository,
+                           ProductoServiceClient productoServiceClient) {
         this.ordenRepository = ordenRepository;
+        this.productoServiceClient = productoServiceClient;
     }
 
     @Override
     public Orden registrarOrden(Orden orden) {
+        Producto producto = productoServiceClient.buscarProductoPorId(orden.getProductId());
+        if (producto == null) {
+            throw new RuntimeException("Producto no encontrado");
+        }
         return ordenRepository.save(orden);
     }
 
@@ -26,6 +36,12 @@ public class OrdenServiceImp implements OrdenService{
     @Override
     public Orden actualizarOrden(Long id, Orden ordenDetalles) {
         Orden orden = ordenRepository.findById(id).orElseThrow(()-> new RuntimeException("No se encontro la orden"));
+
+        Producto producto = productoServiceClient.buscarProductoPorId(id);
+        if (producto == null) {
+            throw new RuntimeException("Producto no encontrado");
+        }
+
         orden.setId(ordenDetalles.getId());
         orden.setUserId(ordenDetalles.getUserId());
         orden.setProductId(ordenDetalles.getProductId());
