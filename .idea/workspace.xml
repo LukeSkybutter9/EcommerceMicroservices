@@ -5,46 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8477149-49c6-4050-a8cf-2c19ffe1e09e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/OrdenService/src/main/java/com/A/OrdenService/configs/KeycloakRoleConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrdenService/src/main/java/com/A/OrdenService/configs/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductoService/src/main/java/com/A/ProductoService/configs/KeycloakRoleConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductoService/src/main/java/com/A/ProductoService/configs/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrdenService/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/OrdenService/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrdenService/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/OrdenService/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrdenService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/OrdenService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductoService/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/ProductoService/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductoService/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ProductoService/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductoService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ProductoService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigateway/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrdenService/src/main/java/com/A/OrdenService/controller/OrdenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrdenService/src/main/java/com/A/OrdenService/controller/OrdenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductoService/src/main/java/com/A/ProductoService/controller/ProductoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductoService/src/main/java/com/A/ProductoService/controller/ProductoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/mysql/orders_db_data/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/orders_db_data/#ib_16384_0.dblwr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/mysql/orders_db_data/#innodb_redo/#ib_redo10" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/orders_db_data/#innodb_redo/#ib_redo10" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/mysql/orders_db_data/auto.cnf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/orders_db_data/auto.cnf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/mysql/orders_db_data/binlog.index" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/orders_db_data/binlog.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/mysql/orders_db_data/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/orders_db_data/ib_buffer_pool" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/mysql/orders_db_data/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/orders_db_data/ibdata1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/mysql/orders_db_data/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/orders_db_data/mysql.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/mysql/orders_db_data/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/orders_db_data/undo_001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/mysql/orders_db_data/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/orders_db_data/undo_002" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/#ib_16384_0.dblwr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/#innodb_redo/#ib_redo10" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/#innodb_redo/#ib_redo10" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/auto.cnf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/auto.cnf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/binlog.index" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/binlog.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/ib_buffer_pool" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/ibdata1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/mysql.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/undo_001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/undo_002" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloakservice/.gradle/8.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/keycloakservice/.gradle/8.8/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloakservice/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/keycloakservice/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloakservice/.gradle/8.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/keycloakservice/.gradle/8.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloakservice/.gradle/8.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/keycloakservice/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloakservice/.gradle/8.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/keycloakservice/.gradle/8.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloakservice/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/keycloakservice/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloakservice/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/keycloakservice/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloakservice/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/keycloakservice/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/keycloak/realms/realm-export.json" beforeDir="false" afterPath="$PROJECT_DIR$/docker/keycloak/realms/realm-export.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,21 +54,6 @@
         <projects_view>
           <tree_state>
             <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="OrdenService" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="OrdenService" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="OrdenService" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="ProductoService" type="f1a62948:ProjectNode" />
@@ -212,7 +162,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml.keycloak: Compose Deployment">
+  <component name="RunManager" selected="Gradle.ProductoService [build]">
     <configuration name="OrdenService [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -239,6 +189,50 @@
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/OrdenService" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ProductoService [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ProductoService" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ProductoService [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ProductoService" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -305,19 +299,6 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.keycloak-mysql: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="keycloak-mysql" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <configuration name="docker-compose.yml.keycloak: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -331,26 +312,13 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.ordenservice: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="ordenservice" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.docker-compose.yml.keycloak: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.keycloak-mysql: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.ordenservice: Compose Deployment" />
+        <item itemvalue="Gradle.ProductoService [build]" />
+        <item itemvalue="Gradle.ProductoService [clean]" />
         <item itemvalue="Gradle.OrdenService [build]" />
         <item itemvalue="Gradle.OrdenService [clean]" />
+        <item itemvalue="Docker.docker-compose.yml.keycloak: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -374,7 +342,7 @@
       <workItem from="1732574816404" duration="6165000" />
       <workItem from="1732653983838" duration="3699000" />
       <workItem from="1732657763476" duration="2283000" />
-      <workItem from="1732660792356" duration="13409000" />
+      <workItem from="1732660792356" duration="16630000" />
     </task>
     <servers />
   </component>
