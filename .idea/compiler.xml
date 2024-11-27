@@ -7,28 +7,8 @@
         <processorPath useClasspath="false">
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.34/ec547ef414ab1d2c040118fb9c1c265ada63af14/lombok-1.18.34.jar" />
         </processorPath>
-        <module name="OrdenService.main" />
+        <module name="keycloak.main" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="apigateway" target="17" />
-      <module name="apigateway.main" target="17" />
-      <module name="apigateway.test" target="17" />
-      <module name="discoveryservice" target="17" />
-      <module name="discoveryservice.main" target="17" />
-      <module name="discoveryservice.test" target="17" />
-      <module name="keycloak" target="17" />
-      <module name="keycloak.main" target="17" />
-      <module name="keycloak.test" target="17" />
-      <module name="OrdenService" target="17" />
-      <module name="OrdenService.main" target="17" />
-      <module name="OrdenService.test" target="17" />
-      <module name="ProductoService" target="17" />
-      <module name="ProductoService.main" target="17" />
-      <module name="ProductoService.test" target="17" />
-      <module name="UsuarioService" target="17" />
-      <module name="UsuarioService.main" target="17" />
-      <module name="UsuarioService.test" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>

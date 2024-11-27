@@ -5,11 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8477149-49c6-4050-a8cf-2c19ffe1e09e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/apigateway/src/main/java/com/ali/apigateway/configs/KeycloakRoleConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apigateway/src/main/java/com/ali/apigateway/configs/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrdenService/src/main/java/com/A/OrdenService/configs/KeycloakRoleConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrdenService/src/main/java/com/A/OrdenService/configs/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductoService/src/main/java/com/A/ProductoService/configs/KeycloakRoleConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductoService/src/main/java/com/A/ProductoService/configs/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrdenService/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/OrdenService/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrdenService/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/OrdenService/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrdenService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/OrdenService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductoService/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/ProductoService/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductoService/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ProductoService/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductoService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ProductoService/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apigateway/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/orders_db_data/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/orders_db_data/#ib_16384_0.dblwr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/orders_db_data/#innodb_redo/#ib_redo10" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/orders_db_data/#innodb_redo/#ib_redo10" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/orders_db_data/auto.cnf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/orders_db_data/auto.cnf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/orders_db_data/binlog.index" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/orders_db_data/binlog.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/orders_db_data/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/orders_db_data/ib_buffer_pool" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/orders_db_data/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/orders_db_data/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/orders_db_data/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/orders_db_data/mysql.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/orders_db_data/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/orders_db_data/undo_001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/orders_db_data/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/orders_db_data/undo_002" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/#ib_16384_0.dblwr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/#innodb_redo/#ib_redo10" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/#innodb_redo/#ib_redo10" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/auto.cnf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/auto.cnf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/binlog.index" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/binlog.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/ib_buffer_pool" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/mysql.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/undo_001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mysql/products_db_data/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/products_db_data/undo_002" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloakservice/.gradle/8.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/keycloakservice/.gradle/8.8/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloakservice/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/keycloakservice/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloakservice/.gradle/8.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/keycloakservice/.gradle/8.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloakservice/.gradle/8.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/keycloakservice/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloakservice/.gradle/8.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/keycloakservice/.gradle/8.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloakservice/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/keycloakservice/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloakservice/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/keycloakservice/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloakservice/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/keycloakservice/.gradle/file-system.probe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,31 +91,31 @@
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="apigateway" type="f1a62948:ProjectNode" />
+                <item name="OrdenService" type="f1a62948:ProjectNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="apigateway" type="f1a62948:ProjectNode" />
+                <item name="OrdenService" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="apigateway" type="f1a62948:ProjectNode" />
+                <item name="OrdenService" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="OrdenService" type="f1a62948:ProjectNode" />
+                <item name="ProductoService" type="f1a62948:ProjectNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="OrdenService" type="f1a62948:ProjectNode" />
+                <item name="ProductoService" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="OrdenService" type="f1a62948:ProjectNode" />
+                <item name="ProductoService" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
               </path>
@@ -107,57 +142,64 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Docker.docker-compose.yml.discoveryserver: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.mysql_ordersdb: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.mysql_productsdb: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.ordenservice: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.productservice: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
-    "Gradle.Build OrdenService.executor": "Run",
-    "Gradle.Build ProductoService.executor": "Run",
-    "Gradle.Build discoveryservice.executor": "Run",
-    "Gradle.OrdenService [build].executor": "Run",
-    "Gradle.OrdenService [clean].executor": "Run",
-    "Gradle.ProductoService [build].executor": "Run",
-    "Gradle.ProductoService [clean].executor": "Run",
-    "Gradle.apigateway [build].executor": "Run",
-    "Gradle.apigateway [clean].executor": "Run",
-    "Gradle.discoveryservice [build].executor": "Run",
-    "Gradle.discoveryservice [clean].executor": "Run",
-    "Gradle.discoveryservice [jar].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.DiscoveryserviceApplication.executor": "Run",
-    "Spring Boot.OrdenServiceApplication.executor": "Run",
-    "Spring Boot.ProductoServiceApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Estudiante/Documents/micro/apigateway/src/main/java/com/ali/apigateway",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.configurations.included.in.services": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.docker-compose.yml.apigateway: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.discoveryserver: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.keycloak-mysql: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.keycloak: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.mysql_ordersdb: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.mysql_productsdb: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.ordenservice: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.productservice: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build OrdenService.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build ProductoService.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build UsuarioService.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build apigateway.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build discoveryservice.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build keycloakservice.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.OrdenService [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.OrdenService [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ProductoService [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ProductoService [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.apigateway [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.apigateway [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.discoveryservice [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.discoveryservice [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.discoveryservice [jar].executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Whole project.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.DiscoveryserviceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.OrdenServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ProductoServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Luke Skyhack/Documents/Ecommerce/ProductoService/src/main/java/com/A/ProductoService&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Luke Skyhack\Documents\Ecommerce\ProductoService\src\main\java\com\A\ProductoService" />
+      <recent name="C:\Users\Luke Skyhack\Documents\Ecommerce\OrdenService\src\main\java\com\A\OrdenService" />
       <recent name="C:\Users\Estudiante\Documents\micro\apigateway\src\main\java\com\ali\apigateway" />
       <recent name="C:\Users\Estudiante\Downloads\micro-2.0\apigateway" />
       <recent name="C:\Users\Luke Skyhack\Documents\Ecommerce\discoveryservice" />
-      <recent name="C:\Users\Luke Skyhack\Documents\Ecommerce\OrdenService" />
-      <recent name="C:\Users\Luke Skyhack\Documents\Ecommerce\ProductoService" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -170,11 +212,11 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.apigateway [build]">
-    <configuration name="apigateway [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Docker.docker-compose.yml.keycloak: Compose Deployment">
+    <configuration name="OrdenService [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/apigateway" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/OrdenService" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -193,10 +235,10 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="apigateway [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="OrdenService [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/apigateway" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/OrdenService" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -263,12 +305,25 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.mysql_productsdb: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="docker-compose.yml.keycloak-mysql: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="mysql_productsdb" />
+              <option value="keycloak-mysql" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.keycloak: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="keycloak" />
             </list>
           </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
@@ -289,34 +344,21 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.productservice: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="productservice" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.apigateway [build]" />
-        <item itemvalue="Gradle.apigateway [clean]" />
-        <item itemvalue="Docker.docker-compose.yml.productservice: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.mysql_productsdb: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.keycloak: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.keycloak-mysql: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.ordenservice: Compose Deployment" />
+        <item itemvalue="Gradle.OrdenService [build]" />
+        <item itemvalue="Gradle.OrdenService [clean]" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.22855.74" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.22855.74" />
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.419" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.419" />
       </set>
     </attachedChunks>
   </component>
@@ -332,6 +374,7 @@
       <workItem from="1732574816404" duration="6165000" />
       <workItem from="1732653983838" duration="3699000" />
       <workItem from="1732657763476" duration="2283000" />
+      <workItem from="1732660792356" duration="13409000" />
     </task>
     <servers />
   </component>

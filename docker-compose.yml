@@ -35,6 +35,8 @@ services:
       - SPRING_SERVER_ADDRESS=0.0.0.0
       - SPRING_SERVER_PORT=8083
       - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://discoveryserver:8787/eureka/
+      - SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_ISSUERURI=http://keycloak:8181/realms/spring-keyclock-realm
+
     depends_on:
       mysql_ordersdb:
         condition: service_healthy
@@ -76,6 +78,8 @@ services:
       - SPRING_SERVER_ADDRESS=0.0.0.0
       - SPRING_SERVER_PORT=8084
       - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://discoveryserver:8787/eureka/
+      - SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_ISSUERURI=http://keycloak:8181/realms/spring-keyclock-realm
+
     depends_on:
       mysql_productsdb:
         condition: service_healthy
@@ -103,6 +107,8 @@ services:
     environment:
       - SPRING_SERVER_PORT=8080
       - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://discoveryserver:8787/eureka/
+      - SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_ISSUERURI=http://keycloak:8181/realms/spring-keyclock-realm
+
     depends_on:
       - discoveryserver
     networks:
@@ -140,11 +146,10 @@ services:
     depends_on:
       - keycloak-mysql
 
-
-
 volumes:
   orders_db_data:
   products_db_data:
+  mysql_keycloak_data:
 
 networks:
   ali-network:
