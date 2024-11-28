@@ -1,29 +1,32 @@
-
 server:
   port: 8383
+
 spring:
   application:
     name: api-gateway
+
   cloud:
     gateway:
-      routes:
-        - id: productoservice
-          uri: lb://PRODUCTOSERVICE
-          predicates:
-            - Path=/producto/**
-        - id: ordenservice
-          uri: lb://OrdenService
-          predicates:
-            - Path=/orden/**
+      mvc:
+        routes:
+          - id: productoservice
+            uri: lb://ProductoService
+            predicates:
+              - Path=/producto/**
+          - id: ordenservice
+            uri: lb://OrdenService
+            predicates:
+              - Path=/orden/**
 
   security:
     oauth2:
       resourceserver:
         jwt:
           issuer-uri: http://keycloak-container:8080/realms/spring-keycloak-realm
+
 eureka:
   client:
     serviceUrl:
       defaultZone: http://discoveryserver:8787/eureka
-      register-with-eureka: true
-      fetch-registry: true
+    register-with-eureka: true
+    fetch-registry: true
